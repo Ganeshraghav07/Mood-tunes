@@ -2,18 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MoodTunes - Music by Emotion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoodTunes - Music Recommender</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <h1>🎵 MoodTunes</h1>
-    <p>Enter your mood and get a perfect music recommendation!</p>
-    <input type="text" id="moodInput" placeholder="e.g., happy, sad, energetic" />
-    <button onclick="recommendMusic()">Recommend 🎧</button>
+    <header>
+      <h1>MoodTunes 🎧</h1>
+      <p>Discover songs that match your mood</p>
+    </header>
 
-    <div id="result"></div>
+    <main>
+      <div class="input-box">
+        <input type="text" id="moodInput" placeholder="Enter your mood (e.g. happy, sad)" />
+        <button onclick="recommendMusic()">Recommend Music</button>
+      </div>
+      <div id="result" class="result-box"></div>
+    </main>
+
+    <footer>
+      <p>Made with ❤️ by Ganesh, Aniket & Kirti</p>
+    </footer>
   </div>
 
   <script src="script.js"></script>
