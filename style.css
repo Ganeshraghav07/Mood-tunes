@@ -100,10 +100,10 @@ footer {
 }
 
 select {
-  padding: 8px 12px;
-  font-size: 16px;
-  margin-top: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  width: 100%;
 }
