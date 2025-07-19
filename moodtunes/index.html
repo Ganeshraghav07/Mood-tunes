@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoodTunes - Music Recommender</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>MoodTunes 🎧</h1>
+      <p>Discover songs that match your mood</p>
+    </header>
+
+    <main>
+      <div class="input-box">
+        <input type="text" id="moodInput" placeholder="Enter your mood (e.g. happy, sad)" />
+        <button onclick="recommendMusic()">Recommend Music</button>
+        <button onclick="startListening()">🎤 Speak Mood</button>
+      <div id="favorites"></div>
+
+      </div>
+      <div id="result" class="result-box"></div>
+
+    </main>
+
+    <footer>
+      <p>Made with ❤️ by Ganesh, Aniket & Kirti</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
