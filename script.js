@@ -1,6 +1,35 @@
+function selectMood(selectedMood) {
+  document.getElementById("moodInput").value = selectedMood;
+  recommendMusic();
+}
+
 function recommendMusic() {
-  const mood = document.getElementById("moodInput").value.toLowerCase().trim();
+  const moodInput = document.getElementById("moodInput").value.toLowerCase().trim();
   const resultDiv = document.getElementById("result");
+
+  const matchingMoods = Object.keys(recommendations).filter(mood =>
+    mood.includes(moodInput) || moodInput.includes(mood)
+  );
+
+  if (matchingMoods.length > 0) {
+    let html = `<h3>Suggestions for "<em>${moodInput}</em>":</h3>`;
+    matchingMoods.forEach(mood => {
+      html += `<h4>🎧 ${mood.charAt(0).toUpperCase() + mood.slice(1)} Mood</h4><ul>`;
+      recommendations[mood].forEach(song => {
+        html += `<li><a href="${song.link}" target="_blank">${song.title}</a></li>`;
+      });
+      html += `</ul><button onclick="shareMood('${mood}')">🔗 Share "${mood}" Playlist</button><hr>`;
+    });
+    resultDiv.innerHTML = html;
+  } else {
+    resultDiv.innerHTML = `
+      <h3>No related moods found for: <em>${moodInput}</em></h3>
+      <p>Try moods like: <strong>happy, sad, calm, energetic, romantic, angry</strong></p>
+    `;
+  }
+}
+
+
 
   const recommendations = {
     happy: [
@@ -154,7 +183,7 @@ function recommendMusic() {
       <p>Try moods like: <strong>happy, sad, calm, energetic, romantic, angry ,oldsong ,englishsong ,confident ,anxious ,sleepy ,nostalgic</strong></p>
     `;
   }
-}
+
 
 // Voice input feature
 function startListening() {
