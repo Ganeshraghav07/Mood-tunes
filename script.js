@@ -76,9 +76,81 @@ function recommendMusic() {
       { title: "Break Stuff – Limp Bizkit", link: "https://www.youtube.com/watch?v=ZpUYjpKg9KY" },
       { title: "Jee Karda – Badlapur", link: "https://www.youtube.com/watch?v=SaUzTtUASYA" },
       { title: "Take A Look Around – Limp Bizkit (MI2)", link: "https://www.youtube.com/watch?v=eGx5vZ_z2CQ" },
-      { title: "Krantikari – Gully Boy", link: "https://www.youtube.com/watch?v=7R57A1J_f38" }
-]
+      { title: "Krantikari – Gully Boy", link: "https://www.youtube.com/watch?v=7R57A1J_f38" }  
+    ],
 
+    oldsong: [
+      { title: "Lag Ja Gale", link: "https://www.youtube.com/watch?v=3g6dDFy3d9g" },
+      { title: "Tere Bina Zindagi Se", link: "https://www.youtube.com/watch?v=fdoXyA6oy7k" },
+      { title: "Pal Pal Dil Ke Paas", link: "https://www.youtube.com/watch?v=WxUdzvle1gA" },
+      { title: "Chura Liya Hai Tumne Jo Dil Ko", link: "https://www.youtube.com/watch?v=IWlBIoeNv5s" },
+      { title: "Kabhi Kabhi Mere Dil Mein", link: "https://www.youtube.com/watch?v=vi3w1TTT-X0" },
+      { title: "Yeh Shaam Mastani", link: "https://www.youtube.com/watch?v=EzhZf3iWM7U" },
+      { title: "Tujhse Naraz Nahi Zindagi", link: "https://www.youtube.com/watch?v=30zzMd3xPjI" },
+      { title: "Ajeeb Dastan Hai Yeh", link: "https://www.youtube.com/watch?v=6qdMZvvICs8" },
+      { title: "Zindagi Ek Safar Hai Suhana", link: "https://www.youtube.com/watch?v=fZnq1HzR9kE" },
+      { title: "Mere Sapno Ki Rani", link: "https://www.youtube.com/watch?v=HwCrQxY7dbQ" }
+    ],
+
+    englishsong: [
+      { title: "Perfect – Ed Sheeran", link: "https://www.youtube.com/watch?v=2Vv-BfVoq4g" },
+      { title: "Let Her Go – Passenger", link: "https://www.youtube.com/watch?v=RBumgq5yVrA" },
+      { title: "Someone Like You – Adele", link: "https://www.youtube.com/watch?v=hLQl3WQQoQ0" },
+      { title: "Thinking Out Loud – Ed Sheeran", link: "https://www.youtube.com/watch?v=lp-EO5I60KA" },
+      { title: "Love Me Like You Do – Ellie Goulding", link: "https://www.youtube.com/watch?v=AJtDXIazrMo" },
+      { title: "See You Again – Wiz Khalifa ft. Charlie Puth", link: "https://www.youtube.com/watch?v=RgKAFK5djSk" },
+      { title: "Shape of You – Ed Sheeran", link: "https://www.youtube.com/watch?v=JGwWNGJdvx8" },
+      { title: "Counting Stars – OneRepublic", link: "https://www.youtube.com/watch?v=hT_nvWreIhg" },
+      { title: "Sugar – Maroon 5", link: "https://www.youtube.com/watch?v=09R8_2nJtjg" },
+      { title: "Let It Be – The Beatles", link: "https://www.youtube.com/watch?v=QDYfEBY9NM4" }
+    ],
+
+    confident: [
+      { title: "Don't Stop Me Now – Queen", link: "https://www.youtube.com/watch?v=HgzGwKwLmgM" },
+      { title: "Apna Time Aayega – Gully Boy", link: "https://www.youtube.com/watch?v=jitg-3xbmKU" },
+      { title: "Stronger – Kanye West", link: "https://www.youtube.com/watch?v=PsO6ZnUZI0g" },
+      { title: "Zinda – Bhaag Milkha Bhaag", link: "https://www.youtube.com/watch?v=KG9Zz0HhbTM" },
+      { title: "Roar – Katy Perry", link: "https://www.youtube.com/watch?v=CevxZvSJLk8" },
+      { title: "7 rings – Ariana Grande", link: "https://www.youtube.com/watch?v=QYh6mYIJG2Y" },
+      { title: "Believer – Imagine Dragons", link: "https://www.youtube.com/watch?v=7wtfhZwyrcc" },
+      { title: "Unstoppable – Sia", link: "https://www.youtube.com/watch?v=cxjvTXo9WWM" },
+      { title: "Brown Munde – AP Dhillon", link: "https://www.youtube.com/watch?v=n-F3zk8MZ2Y" }
+    ],
+
+    anxious: [
+      { title: "Help – The Beatles", link: "https://www.youtube.com/watch?v=2Q_ZzBGPdqE" },
+      { title: "Naina – Dangal", link: "https://www.youtube.com/watch?v=NPjeNfdFQk4" },
+      { title: "Creep – Radiohead", link: "https://www.youtube.com/watch?v=XFkzRNyygfk" },
+      { title: "Channa Mereya – Ae Dil Hai Mushkil", link: "https://www.youtube.com/watch?v=284Ov7ysmfA" },
+      { title: "Mad World – Gary Jules", link: "https://www.youtube.com/watch?v=4N3N1MlvVc4" },
+      { title: "Phir Se Ud Chala – Rockstar", link: "https://www.youtube.com/watch?v=i-2hDq6XnQc" },
+      { title: "Agar Tum Saath Ho – Tamasha", link: "https://www.youtube.com/watch?v=T94PHkuydcw" },
+      { title: "Kyun – Barfi!", link: "https://www.youtube.com/watch?v=TyOzcbN0RjY" },
+      { title: "Lag Jaa Gale – Lata Mangeshkar", link: "https://www.youtube.com/watch?v=Q29GWZpDe9k" }
+    ],
+
+    sleepy: [
+      { title: "River Flows in You – Yiruma", link: "https://www.youtube.com/watch?v=7maJOI3QMu0" },
+      { title: "Agar Tum Saath Ho – Tamasha", link: "https://www.youtube.com/watch?v=T94PHkuydcw" },
+      { title: "Weightless – Marconi Union", link: "https://www.youtube.com/watch?v=UfcAVejslrU" },
+      { title: "Blower’s Daughter – Damien Rice", link: "https://www.youtube.com/watch?v=1oB3BO5P5UY" },
+      { title: "Phir Le Aaya Dil – Barfi!", link: "https://www.youtube.com/watch?v=yihPBH0j0_E" },
+      { title: "Kho Gaye Hum Kahan – Baar Baar Dekho", link: "https://www.youtube.com/watch?v=n0zYqTaJViU" },
+      { title: "Saibo – Shor in the City", link: "https://www.youtube.com/watch?v=clS96l8T5dU" },
+      { title: "Luka Chuppi – Rang De Basanti", link: "https://www.youtube.com/watch?v=QdykXAT19Go" }
+    ],
+
+    nostalgic: [
+      { title: "Pehla Nasha – Jo Jeeta Wohi Sikandar", link: "https://www.youtube.com/watch?v=EbHGS_bVkXY" },
+      { title: "Yesterday – The Beatles", link: "https://www.youtube.com/watch?v=NrgmdOz227I" },
+      { title: "Kal Ho Naa Ho – Title Track", link: "https://www.youtube.com/watch?v=7Bg4GSlX_Sk" },
+      { title: "Fix You – Coldplay", link: "https://www.youtube.com/watch?v=k4V3Mo61fJM" },
+      { title: "Tera Yaar Hoon Main – Sonu Ke Titu Ki Sweety", link: "https://www.youtube.com/watch?v=ABuexNuzUro" },
+      { title: "Tum Mile – Tum Mile", link: "https://www.youtube.com/watch?v=bGvEklK-2TU" },
+      { title: "Yaaron Dosti – KK", link: "https://www.youtube.com/watch?v=w-0CS_QBfDg" },
+      { title: "Tune Jo Na Kaha – New York", link: "https://www.youtube.com/watch?v=0kF2h2_JOek" },
+      { title: "Ikk Kudi – Udta Punjab", link: "https://www.youtube.com/watch?v=BO1fLziIvy4" }
+    ]
   };
 
   if (recommendations[mood]) {
