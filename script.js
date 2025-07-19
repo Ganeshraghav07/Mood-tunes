@@ -1,18 +1,18 @@
 function recommendMusic() {
-  const mood = document.getElementById("moodInput").value.toLowerCase();
+  const mood = document.getElementById("moodInput").value.toLowerCase().trim();
   const resultDiv = document.getElementById("result");
 
   const recommendations = {
     happy: [
       { title: "Happy - Pharrell Williams", link: "https://www.youtube.com/watch?v=ZbZSe6N_BXs" },
       { title: "Best Day Of My Life - American Authors", link: "https://www.youtube.com/watch?v=Y66j_BUCBMY" },
-      { title: "Can't Stop The Feeling - Justin Timberlake", link: "https://www.youtube.com/watch?v=ru0K8uYEZWw" }       
+      { title: "Can't Stop The Feeling - Justin Timberlake", link: "https://www.youtube.com/watch?v=ru0K8uYEZWw" }
     ],
     sad: [
       { title: "Fix You - Coldplay", link: "https://www.youtube.com/watch?v=hoNb6HuNmU0" },
       { title: "Let Me Down Slowly - Alec Benjamin", link: "https://www.youtube.com/watch?v=50VNCymT-Cs" },
       { title: "Someone Like You - Adele", link: "https://www.youtube.com/watch?v=hLQl3WQQoQ0" },
-      {title:"Humadard",link:"https://youtu.be/FJ55SHCzt88?si=Mr5xiNsUE-Gdt-Oj"}
+      { title: "Humdard", link: "https://youtu.be/FJ55SHCzt88?si=Mr5xiNsUE-Gdt-Oj" }
     ],
     energetic: [
       { title: "Chandelier - Sia", link: "https://www.youtube.com/watch?v=2vjPBrBU-TM" },
@@ -37,11 +37,11 @@ function recommendMusic() {
   };
 
   if (recommendations[mood]) {
-    let html = `<h3>Your mood: <em>${mood}</em></h3><ul>`;
+    let html = `<h3>Recommended Songs for "<em>${mood}</em>" Mood:</h3><ul>`;
     recommendations[mood].forEach(song => {
       html += `<li><a href="${song.link}" target="_blank">${song.title}</a></li>`;
     });
-    html += `</ul>`;
+    html += `</ul><button onclick="shareMood('${mood}')">🔗 Share Playlist</button>`;
     resultDiv.innerHTML = html;
   } else {
     resultDiv.innerHTML = `
@@ -51,3 +51,47 @@ function recommendMusic() {
   }
 }
 
+// Voice input feature
+function startListening() {
+  if (!('webkitSpeechRecognition' in window)) {
+    alert("Your browser doesn't support voice recognition.");
+    return;
+  }
+
+  const recognition = new webkitSpeechRecognition();
+  recognition.lang = "en-US";
+  recognition.interimResults = false;
+  recognition.maxAlternatives = 1;
+
+  recognition.start();
+
+  recognition.onstart = () => {
+    console.log("Voice recognition started. Speak now.");
+  };
+
+  recognition.onresult = (event) => {
+    const transcript = event.results[0][0].transcript.toLowerCase();
+    document.getElementById("moodInput").value = transcript;
+    recommendMusic();
+  };
+
+  recognition.onerror = (event) => {
+    console.error("Speech recognition error", event.error);
+    alert("Error recognizing voice. Try again.");
+  };
+}
+
+// Share mood playlist
+function shareMood(mood) {
+  const shareText = `Check out this mood-based playlist for "${mood}"! 🎶`;
+  const shareUrl = window.location.href + `#${mood}`;
+  if (navigator.share) {
+    navigator.share({
+      title: "Mood Playlist",
+      text: shareText,
+      url: shareUrl
+    }).catch(err => console.log("Share failed:", err));
+  } else {
+    alert("Sharing not supported in this browser.");
+  }
+}
