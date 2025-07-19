@@ -43,7 +43,7 @@ This project was built for a hackathon to demonstrate:
 ## 🌐 Live Demo
 
 [👉 Click here to try MoodTunes](#)  
-(Replace with your deployed link if hosted on GitHub Pages or Vercel)
+(https://moodtunes-team07.netlify.app/)
 
 ---
 
