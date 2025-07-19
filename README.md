@@ -1,56 +1,61 @@
-# 🎧 MoodTunes - Mood Based Music Recommender
+# MoodTunes - Mood-Based Music Recommender
 
-MoodTunes is a fun and simple web app that recommends music based on your current mood. Just type how you feel — like happy, sad, energetic, or calm — and get a song that matches your vibe instantly!
-
----
-
-## 🚀 Features
-
--  Mood-based music recommendations  
--  Simple and clean interface  
--  Fast and responsive design  
--  Direct YouTube song links  
--  Works on mobile and desktop
+MoodTunes is a simple and interactive web application that recommends music based on your current mood. Users can either type or speak how they feel — like happy, sad, energetic, or calm — and instantly get a song that matches their emotional vibe.
 
 ---
 
-## 💡 How to Use
+## Features
+
+- Mood-based music recommendations
+- Voice input using Web Speech API
+- Clean and responsive interface
+- Fast and mobile-friendly design
+- Direct YouTube song links
+
+---
+
+## How to Use
 
 1. Open the app in your browser.
-2. Enter your current mood (e.g., happy, sad, romantic, angry, calm, energetic).
-3. Click Recommend Music.
-4. Enjoy the song suggestion via YouTube! 
+2. Type or speak your current mood (e.g., happy, sad, romantic, angry, calm, energetic).
+3. Click on “Recommend Music”.
+4. Get a song suggestion linked to YouTube.
 
 ---
 
-## 🧠 Why This Project?
+## Why This Project?
 
-This project was built for a hackathon to demonstrate:
-- Practical use of JavaScript DOM manipulation
-- Clean and responsive HTML/CSS design
-- A useful real-life tool that combines tech and emotion
+This project was built as part of a hackathon to explore the intersection of emotion and technology. It demonstrates:
+
+- Real-world use of JavaScript and DOM manipulation
+- Responsive design using HTML and CSS
+- Integration of voice input for accessibility
+- A practical and creative music recommendation tool
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - HTML  
 - CSS  
 - JavaScript  
+- Web Speech API (for voice input)  
+- Git & GitHub (for version control)  
+- Netlify (for deployment)
 
 ---
 
-## 🌐 Live Demo
+## Live Demo
 
-[👉 Click here to try MoodTunes](#)  
-(https://moodtunes-team07.netlify.app/)
+Try the live version here:  
+[https://moodtunes-team07.netlify.app](https://moodtunes-team07.netlify.app)
 
 ---
 
-## 👥 Team
+## Team
 
 - Ganesh Kumar  
-- Aniket vats
-- Kritika 
+- Aniket Vats  
+- Kritika  
 
-Built with ❤️ during Hackathon 2025.
+Built as part of Hackathon 2025.
