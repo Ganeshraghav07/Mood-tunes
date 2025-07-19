@@ -16,14 +16,36 @@
 
     <main>
       <div class="input-box">
-        <input type="text" id="moodInput" placeholder="Enter your mood (e.g. happy, sad)" />
+        <!-- Input Field -->
+        <input type="text" id="moodInput" placeholder="Enter your mood (e.g. happy, sad)" oninput="recommendMusic()" />
+
+        <!-- Dropdown Field -->
+        <select id="moodDropdown" onchange="selectMood(this.value)">
+          <option value="">-- Select Mood --</option>
+          <option value="happy">😄 Happy</option>
+          <option value="sad">😢 Sad</option>
+          <option value="energetic">⚡ Energetic</option>
+          <option value="calm">🌙 Calm</option>
+          <option value="romantic">❤️ Romantic</option>
+          <option value="angry">😡 Angry</option>
+          <option value="oldsong">🎙️ Old Hindi</option>
+          <option value="englishsong">🎵 English</option>
+          <option value="confident">🔥 Confident</option>
+          <option value="anxious">😥 Anxious</option>
+          <option value="sleepy">😴 Sleepy</option>
+          <option value="nostalgic">📼 Nostalgic</option>
+        </select>
+
+        <!-- Buttons -->
         <button onclick="recommendMusic()">Recommend Music</button>
         <button onclick="startListening()">🎤 Speak Mood</button>
+      </div>
+
+      <!-- Favorite Songs Section (if any) -->
       <div id="favorites"></div>
 
-      </div>
+      <!-- Result Section -->
       <div id="result" class="result-box"></div>
-
     </main>
 
     <footer>
@@ -31,6 +53,7 @@
     </footer>
   </div>
 
+  <!-- Script link -->
   <script src="script.js"></script>
 </body>
 </html>
