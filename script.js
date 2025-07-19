@@ -163,7 +163,7 @@ function recommendMusic() {
   } else {
     resultDiv.innerHTML = `
       <h3>Sorry, no music found for: <em>${mood}</em></h3>
-      <p>Try moods like: <strong>happy, sad, calm, energetic, romantic, angry</strong></p>
+      <p>Try moods like: <strong>happy, sad, calm, energetic, romantic, angry ,oldsong ,englishsong ,confident ,anxious ,sleepy ,nostalgic</strong></p>
     `;
   }
 }
