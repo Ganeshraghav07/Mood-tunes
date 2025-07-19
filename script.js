@@ -4,16 +4,16 @@ function recommendMusic() {
 
   const recommendations = {
     happy: [
-      { title: "Ude Dil Befikre", link: "https://www.youtube.com/watch?v=2POembdArVo" },
-      { title: "Gallan Goodiyan", link: "https://www.youtube.com/watch?v=PBhOtYjEJ1g" },
-      { title: "Kala Chashma", link: "https://www.youtube.com/watch?v=k4yXQkG2s1E" },
-      { title: "Kar Gayi Chull", link: "https://www.youtube.com/watch?v=9U1mn2eP3wE" },
-      { title: "Badtameez Dil", link: "https://www.youtube.com/watch?v=6G8C08z60_M" },
-      { title: "London Thumakda", link: "https://www.youtube.com/watch?v=Kp9tQZz2dgc" },
-      { title: "Tamma Tamma Again", link: "https://www.youtube.com/watch?v=Zq2o5El2ePE" },
-      { title: "Nashe Si Chadh Gayi", link: "https://www.youtube.com/watch?v=BVib6Rr9nYg" },
-      { title: "The Breakup Song", link: "https://www.youtube.com/watch?v=8M9QxYdZL3E" },
-      { title: "Abhi Toh Party Shuru Hui Hai", link: "https://www.youtube.com/watch?v=vJtMfd3s9XY" }
+      { title: "Ude Dil Befikre", link: "https://youtu.be/gXe-KWe-YMs?si=n9soTjGWHEAjnmqF" },
+      { title: "Gallan Goodiyan", link: "https://youtu.be/jCEdTq3j-0U?si=1tb7pdj-3F5GGu-3" },
+      { title: "Kala Chashma", link: "https://youtu.be/k4yXQkG2s1E?si=nK2fzEFEGQ-d0B3Q" },
+      { title: "Kar Gayi Chull", link: "https://youtu.be/NTHz9ephYTw?si=qDW_iMjhuxROEmC7" },
+      { title: "Badtameez Dil", link: "https://youtu.be/II2EO3Nw4m0?si=R4yriOQTSGlv1nlr" },
+      { title: "London Thumakda", link: "https://youtu.be/udra3Mfw2oo?si=3dP-71bqCQ8tsdK5" },
+      { title: "Tamma Tamma Again", link: "https://youtu.be/EEX_XM6SxmY?si=-WdtqJk8IjCiehSI" },
+      { title: "Nashe Si Chadh Gayi", link: "https://youtu.be/HoCwa6gnmM0?si=b8cAal4icu5XRO3C" },
+      { title: "The Breakup Song", link: "https://youtu.be/hAB2MptEqWQ?si=wEPuHGgTwfT2GmdU" },
+      { title: "Abhi Toh Party Shuru Hui Hai", link: "https://youtu.be/8LZgzAZ2lpQ?si=PlQf_BZ7eZ5UCarl" }
     ],
 
     sad: [
@@ -28,29 +28,26 @@ function recommendMusic() {
       { title: "Jind Meriye",link:"https://youtu.be/spZUXAeXuOc?si=K4Z2M9DupyA_ATNv"}
     ],
     energetic: [
-      { title: "Malhari – Bajirao Mastani", link: "https://www.youtube.com/watch?v=4D9cYgASQmA" },
-      { title: "Zinda – Bhaag Milkha Bhaag", link: "https://www.youtube.com/watch?v=KG9Zz0HhbTM" },
-      { title: "Sher Aaya Sher – Gully Boy", link: "https://www.youtube.com/watch?v=cKa3bTF9Q2I" },
-      { title: "Jai Jai Shivshankar – War", link: "https://www.youtube.com/watch?v=p8P_Mt3qYkY" },
-      { title: "Apna Time Aayega – Gully Boy", link: "https://www.youtube.com/watch?v=jitg-3xbmKU" },
-      { title: "Ghungroo – War", link: "https://www.youtube.com/watch?v=2b4n3v4f1Jk" },
-      { title: "Let’s Nacho – Kapoor & Sons", link: "https://www.youtube.com/watch?v=SHanY_Cn6Yw" },
-      { title: "Swag Se Swagat – Tiger Zinda Hai", link: "https://www.youtube.com/watch?v=xkHdqI0ShJw" },
-      { title: "Party On My Mind – Race 2", link: "https://www.youtube.com/watch?v=O-zpOMYRi0w" },
-      { title: "Khalibali – Padmaavat", link: "https://www.youtube.com/watch?v=RLO1cIc2f7k" }
+      { title: "Malhari – Bajirao Mastani", link: "https://youtu.be/l_MyUGq7pgs?si=h-u8ysG9uep1LAqU" },
+      { title: "Zinda – Bhaag Milkha Bhaag", link: "https://youtu.be/Ax0G_P2dSBw?si=r2s-Isfa1n-RSmJ8" },
+      { title: "Sher Aaya Sher – Gully Boy", link: "https://youtu.be/M81wneSjQbA?si=suA4AxnWjtnyDwQk" },
+      { title: "Jai Jai Shivshankar – War", link: "https://youtu.be/oGneAab3e88?si=j7M36IdLk5jN8on0" },
+      { title: "Apna Time Aayega – Gully Boy", link: "https://youtu.be/jFGKJBPFdUA?si=lDFSJUrLAt6Nw020" },
+      { title: "Ghungroo – War", link: "https://youtu.be/qFkNATtc3mc?si=t_IYURJPQ6wX--1v" },
+      { title: "Let’s Nacho – Kapoor & Sons", link: "https://youtu.be/TLnwqAarPkM?si=BxfpguRWSFNOjtPf" },
+      { title: "Swag Se Swagat – Tiger Zinda Hai", link: "https://youtu.be/7TRFf7uUfhQ?si=SdjTqrnfgW7nhOw9" },
+      { title: "Party On My Mind – Race 2", link: "https://youtu.be/WzvGrz-wNMs?si=e-R9XZgnp7xz-BX1" },
+      { title: "Khalibali – Padmaavat", link: "https://youtu.be/v7K4vGYL9zI?si=dE6fzeOzSWZOUeoz" }
     ],
 
    calm: [
-      { title: "Raabta – Agent Vinod", link: "https://www.youtube.com/watch?v=w6QGe-pXgdI" },
-      { title: "Let Her Go – Passenger", link: "https://www.youtube.com/watch?v=RBumgq5yVrA" },
-      { title: "Phir Le Aaya Dil – Barfi", link: "https://www.youtube.com/watch?v=yihPBH0j0_E" },
-      { title: "Photograph – Ed Sheeran", link: "https://www.youtube.com/watch?v=nSDgHBxUbVQ" },
-      { title: "Main Rahoon Ya Na Rahoon – Armaan Malik", link: "https://www.youtube.com/watch?v=7QaBToXKkCU" },
-      { title: "Someone Like You – Adele", link: "https://www.youtube.com/watch?v=hLQl3WQQoQ0" },
-      { title: "Hasi – Hamari Adhuri Kahani", link: "https://www.youtube.com/watch?v=Yq7YHRbTfpM" },
-      { title: "Until I Found You – Stephen Sanchez", link: "https://www.youtube.com/watch?v=El7GV7c5kB0" },
-      { title: "Tera Yaar Hoon Main – Sonu Ke Titu Ki Sweety", link: "https://www.youtube.com/watch?v=ABuexNuzUro" },
-      { title: "Night Changes – One Direction", link: "https://www.youtube.com/watch?v=s-zl4HIz9SY" }
+      { title: "Raabta – Agent Vinod", link: "https://youtu.be/zlt38OOqwDc?si=FMZAlCfpxmiyONtO" },
+      { title: "Let Her Go – Passenger", link: "https://youtu.be/RBumgq5yVrA?si=D1-OTJFuib5OBaCO" },
+      { title: "Phir Le Aaya Dil – Barfi", link: "https://youtu.be/k6BnSIs3XUQ?si=2U8E-lt4OSGN7zdG" },
+      { title: "Photograph – Ed Sheeran", link: "https://youtu.be/nSDgHBxUbVQ?si=lzVNp2_gnw1ca9t2" },
+      { title: "Main Rahoon Ya Na Rahoon – Armaan Malik", link: "https://youtu.be/Dp6lbdoprZ0?si=dDhFRCCySFe5K6Qn" },
+      { title: "Someone Like You – Adele", link: "https://youtu.be/hLQl3WQQoQ0?si=yuD0VOPT2rlnVU_j" },
+      { title: "Hasi – Hamari Adhuri Kahani", link: "https://youtu.be/d0x2UbhbdmY?si=E3WnLNEnbsMb3utL" }
     ],
 
     romantic: [
@@ -133,23 +130,14 @@ function recommendMusic() {
       { title: "River Flows in You – Yiruma", link: "https://www.youtube.com/watch?v=7maJOI3QMu0" },
       { title: "Agar Tum Saath Ho – Tamasha", link: "https://www.youtube.com/watch?v=T94PHkuydcw" },
       { title: "Weightless – Marconi Union", link: "https://www.youtube.com/watch?v=UfcAVejslrU" },
-      { title: "Blower’s Daughter – Damien Rice", link: "https://www.youtube.com/watch?v=1oB3BO5P5UY" },
-      { title: "Phir Le Aaya Dil – Barfi!", link: "https://www.youtube.com/watch?v=yihPBH0j0_E" },
-      { title: "Kho Gaye Hum Kahan – Baar Baar Dekho", link: "https://www.youtube.com/watch?v=n0zYqTaJViU" },
-      { title: "Saibo – Shor in the City", link: "https://www.youtube.com/watch?v=clS96l8T5dU" },
-      { title: "Luka Chuppi – Rang De Basanti", link: "https://www.youtube.com/watch?v=QdykXAT19Go" }
+      { title: "Blower’s Daughter – Damien Rice", link: "https://www.youtube.com/watch?v=1oB3BO5P5UY" }
     ],
 
     nostalgic: [
       { title: "Pehla Nasha – Jo Jeeta Wohi Sikandar", link: "https://www.youtube.com/watch?v=EbHGS_bVkXY" },
       { title: "Yesterday – The Beatles", link: "https://www.youtube.com/watch?v=NrgmdOz227I" },
       { title: "Kal Ho Naa Ho – Title Track", link: "https://www.youtube.com/watch?v=7Bg4GSlX_Sk" },
-      { title: "Fix You – Coldplay", link: "https://www.youtube.com/watch?v=k4V3Mo61fJM" },
-      { title: "Tera Yaar Hoon Main – Sonu Ke Titu Ki Sweety", link: "https://www.youtube.com/watch?v=ABuexNuzUro" },
-      { title: "Tum Mile – Tum Mile", link: "https://www.youtube.com/watch?v=bGvEklK-2TU" },
-      { title: "Yaaron Dosti – KK", link: "https://www.youtube.com/watch?v=w-0CS_QBfDg" },
-      { title: "Tune Jo Na Kaha – New York", link: "https://www.youtube.com/watch?v=0kF2h2_JOek" },
-      { title: "Ikk Kudi – Udta Punjab", link: "https://www.youtube.com/watch?v=BO1fLziIvy4" }
+      { title: "Fix You – Coldplay", link: "https://www.youtube.com/watch?v=k4V3Mo61fJM" }
     ]
   };
 
