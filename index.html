@@ -42,7 +42,120 @@
       </div>
 
       <!-- Favorite Songs Section (if any) -->
-      <div id="favorites"></div>
+      <div id="favorites"></div><!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodTunes - Music for Your Mood</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-music"></i>
+                </div>
+                <div class="logo-text">MoodTunes</div>
+            </div>
+            <div class="controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </header>
+
+        <section class="hero">
+            <h1>Find Your Perfect Playlist</h1>
+            <p>Select your current mood and we'll create a personalized playlist just for you. Choose from text options, emojis, or even use your voice!</p>
+        </section>
+
+        <section class="mood-selector" id="moodSelector">
+            <h2 class="selector-title"><i class="fas fa-heart"></i> How are you feeling today?</h2>
+            
+            <div class="input-group">
+                <div class="input-row">
+                    <div class="input-card">
+                        <h3><i class="fas fa-font"></i> Text Mood</h3>
+                        <select id="textMood">
+                            <option value="">Select how you feel...</option>
+                            <option value="happy">I feel happy 😊</option>
+                            <option value="sad">I feel sad 😢</option>
+                            <option value="energetic">I feel energetic ⚡</option>
+                            <option value="calm">I feel calm 😌</option>
+                            <option value="anxious">I feel anxious 😰</option>
+                            <option value="romantic">I feel romantic 😍</option>
+                            <option value="angry">I feel angry 😠</option>
+                            <option value="bored">I feel bored 🥱</option>
+                            <option value="focused">I feel focused 🧠</option>
+                            <option value="nostalgic">I feel nostalgic 🕰️</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-card">
+                        <h3><i class="far fa-smile"></i> Emoji Mood</h3>
+                        <select id="emojiMood">
+                            <option value="">Select an emoji...</option>
+                            <option value="happy">😊 Happy</option>
+                            <option value="sad">😢 Sad</option>
+                            <option value="energetic">⚡ Energetic</option>
+                            <option value="calm">😌 Calm</option>
+                            <option value="anxious">😰 Anxious</option>
+                            <option value="romantic">😍 Romantic</option>
+                            <option value="angry">😠 Angry</option>
+                            <option value="bored">🥱 Bored</option>
+                            <option value="focused">🧠 Focused</option>
+                            <option value="nostalgic">🕰️ Nostalgic</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="input-row">
+                    <div class="input-card">
+                        <h3><i class="fas fa-microphone"></i> Voice Mood</h3>
+                        <button class="voice-btn" id="voiceBtn">
+                            <i class="fas fa-microphone"></i> Tap & Speak Your Mood
+                        </button>
+                        <div id="voiceResult" class="voice-result"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="playlist-section" id="playlistSection">
+            <div class="playlist-header">
+                <div class="mood-result">
+                    <div class="mood-emoji" id="moodEmoji"></div>
+                    <div class="mood-text" id="moodText"></div>
+                </div>
+                <div class="playlist-actions">
+                    <button class="action-btn" id="shareBtn">
+                        <i class="fas fa-share-alt"></i> Copy Link
+                    </button>
+                    <button class="action-btn try-again" id="tryAgainBtn">
+                        <i class="fas fa-redo"></i> Try Again
+                    </button>
+                </div>
+            </div>
+            
+            <div class="playlist-container" id="playlistContainer">
+                <!-- Playlist will be generated here -->
+            </div>
+        </section>
+
+        <footer>
+            <p>Made with ❤️ and 🎶 | By Kritik, Aniket and Ganesh | MoodTunes | All music rights belong to their respective owners</p>
+        </footer>
+    </div>
+
+    <div class="notification" id="notification">Link copied to clipboard!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
       <!-- Result Section -->
       <div id="result" class="result-box"></div>
